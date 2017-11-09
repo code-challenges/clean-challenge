@@ -11,6 +11,7 @@
 		42102DBE1F9D059F00E68B38 /* ExternalInterfacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102DBD1F9D059F00E68B38 /* ExternalInterfacesTests.swift */; };
 		42102DC01F9D059F00E68B38 /* ExternalInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DAACA41FB3DE360025E130 /* hellogenioapiresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DAACA31FB3DE360025E130 /* hellogenioapiresponse.json */; };
+		42DAACB61FB3E7C00025E130 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACB51FB3E7C00025E130 /* Interfaces.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +32,7 @@
 		42102DBD1F9D059F00E68B38 /* ExternalInterfacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalInterfacesTests.swift; sourceTree = "<group>"; };
 		42102DBF1F9D059F00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DAACA31FB3DE360025E130 /* hellogenioapiresponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hellogenioapiresponse.json; sourceTree = "<group>"; };
+		42DAACB51FB3E7C00025E130 /* Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interfaces.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */,
+				42DAACB51FB3E7C00025E130 /* Interfaces.swift */,
 				42102DB31F9D059F00E68B38 /* Info.plist */,
 			);
 			path = ExternalInterfaces;
@@ -151,6 +154,7 @@
 				TargetAttributes = {
 					42102DAE1F9D059F00E68B38 = {
 						CreatedOnToolsVersion = 9.0.1;
+						LastSwiftMigration = 0910;
 						ProvisioningStyle = Automatic;
 					};
 					42102DB71F9D059F00E68B38 = {
@@ -200,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DAACB61FB3E7C00025E130 /* Interfaces.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +343,7 @@
 		42102DC41F9D059F00E68B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -350,6 +356,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.julio.ExternalInterfaces;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +365,7 @@
 		42102DC51F9D059F00E68B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -378,6 +386,7 @@
 		42102DC71F9D059F00E68B38 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExternalInterfacesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -391,6 +400,7 @@
 		42102DC81F9D059F00E68B38 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ExternalInterfacesTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
