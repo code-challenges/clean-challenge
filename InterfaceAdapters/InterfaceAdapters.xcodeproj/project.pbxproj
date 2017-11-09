@@ -10,6 +10,7 @@
 		42102D951F9D055D00E68B38 /* InterfaceAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42102D8B1F9D055D00E68B38 /* InterfaceAdapters.framework */; };
 		42102D9A1F9D055D00E68B38 /* InterfaceAdaptersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102D991F9D055D00E68B38 /* InterfaceAdaptersTests.swift */; };
 		42102D9C1F9D055D00E68B38 /* InterfaceAdapters.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102D8E1F9D055D00E68B38 /* InterfaceAdapters.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42DAACBB1FB3E9040025E130 /* ApplicationBusinessRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DAACBC1FB3E9040025E130 /* ApplicationBusinessRules.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		42102D941F9D055D00E68B38 /* InterfaceAdaptersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InterfaceAdaptersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42102D991F9D055D00E68B38 /* InterfaceAdaptersTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceAdaptersTests.swift; sourceTree = "<group>"; };
 		42102D9B1F9D055D00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DAACBC1FB3E9040025E130 /* ApplicationBusinessRules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = ApplicationBusinessRules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DAACBB1FB3E9040025E130 /* ApplicationBusinessRules.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 				42102D8D1F9D055D00E68B38 /* InterfaceAdapters */,
 				42102D981F9D055D00E68B38 /* InterfaceAdaptersTests */,
 				42102D8C1F9D055D00E68B38 /* Products */,
+				42DAACBA1FB3E9040025E130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +88,14 @@
 				42102D9B1F9D055D00E68B38 /* Info.plist */,
 			);
 			path = InterfaceAdaptersTests;
+			sourceTree = "<group>";
+		};
+		42DAACBA1FB3E9040025E130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DAACBC1FB3E9040025E130 /* ApplicationBusinessRules.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

@@ -10,6 +10,7 @@
 		42102D711F9D054400E68B38 /* ApplicationBusinessRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42102D671F9D054400E68B38 /* ApplicationBusinessRules.framework */; };
 		42102D761F9D054500E68B38 /* ApplicationBusinessRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102D751F9D054500E68B38 /* ApplicationBusinessRulesTests.swift */; };
 		42102D781F9D054500E68B38 /* ApplicationBusinessRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102D6A1F9D054400E68B38 /* ApplicationBusinessRules.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		42DAACB81FB3E8E50025E130 /* EnterpriseBusinessRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DAACB91FB3E8E50025E130 /* EnterpriseBusinessRules.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +30,7 @@
 		42102D701F9D054400E68B38 /* ApplicationBusinessRulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApplicationBusinessRulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42102D751F9D054500E68B38 /* ApplicationBusinessRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApplicationBusinessRulesTests.swift; sourceTree = "<group>"; };
 		42102D771F9D054500E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42DAACB91FB3E8E50025E130 /* EnterpriseBusinessRules.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EnterpriseBusinessRules.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DAACB81FB3E8E50025E130 /* EnterpriseBusinessRules.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +59,7 @@
 				42102D691F9D054400E68B38 /* ApplicationBusinessRules */,
 				42102D741F9D054400E68B38 /* ApplicationBusinessRulesTests */,
 				42102D681F9D054400E68B38 /* Products */,
+				42DAACB71FB3E8E50025E130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -84,6 +88,14 @@
 				42102D771F9D054500E68B38 /* Info.plist */,
 			);
 			path = ApplicationBusinessRulesTests;
+			sourceTree = "<group>";
+		};
+		42DAACB71FB3E8E50025E130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DAACB91FB3E8E50025E130 /* EnterpriseBusinessRules.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

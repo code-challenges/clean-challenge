@@ -12,6 +12,7 @@
 		42102DC01F9D059F00E68B38 /* ExternalInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		42DAACA41FB3DE360025E130 /* hellogenioapiresponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DAACA31FB3DE360025E130 /* hellogenioapiresponse.json */; };
 		42DAACB61FB3E7C00025E130 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACB51FB3E7C00025E130 /* Interfaces.swift */; };
+		42DAACBE1FB3E9100025E130 /* InterfaceAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +34,7 @@
 		42102DBF1F9D059F00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42DAACA31FB3DE360025E130 /* hellogenioapiresponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = hellogenioapiresponse.json; sourceTree = "<group>"; };
 		42DAACB51FB3E7C00025E130 /* Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interfaces.swift; sourceTree = "<group>"; };
+		42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InterfaceAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				42DAACBE1FB3E9100025E130 /* InterfaceAdapters.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +63,7 @@
 				42102DB11F9D059F00E68B38 /* ExternalInterfaces */,
 				42102DBC1F9D059F00E68B38 /* ExternalInterfacesTests */,
 				42102DB01F9D059F00E68B38 /* Products */,
+				42DAACBD1FB3E9100025E130 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,6 +94,14 @@
 				42102DBF1F9D059F00E68B38 /* Info.plist */,
 			);
 			path = ExternalInterfacesTests;
+			sourceTree = "<group>";
+		};
+		42DAACBD1FB3E9100025E130 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
