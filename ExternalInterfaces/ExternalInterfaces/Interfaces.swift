@@ -8,7 +8,6 @@
 
 import Foundation
 
-
 struct Message {
     let type: String //
     let text: String //
@@ -36,6 +35,6 @@ struct Item {
         case receivedMessage
     }
     let type: Element
-    let text:
+    let text: String
 }
 
