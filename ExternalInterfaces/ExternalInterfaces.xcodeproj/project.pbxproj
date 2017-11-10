@@ -14,6 +14,8 @@
 		4237D7111FB62C61000F3D52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7101FB62C61000F3D52 /* Item.swift */; };
 		4237D7131FB62CAD000F3D52 /* GenioAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */; };
 		4237D7161FB6318C000F3D52 /* URL+GenioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */; };
+		425CDBA91FB65418000FF976 /* Item+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425CDBA81FB65418000FF976 /* Item+Parser.swift */; };
+		425CDBAB1FB6542D000FF976 /* GenioAPIResponse+Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 425CDBAA1FB6542D000FF976 /* GenioAPIResponse+Parser.swift */; };
 		42DAACA41FB3DE360025E130 /* GenioAPIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DAACA31FB3DE360025E130 /* GenioAPIResponse.json */; };
 		42DAACBE1FB3E9100025E130 /* InterfaceAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */; };
 		42DAACC11FB3F1840025E130 /* GenoiAPIResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACC01FB3F1840025E130 /* GenoiAPIResponseTests.swift */; };
@@ -40,6 +42,8 @@
 		4237D7101FB62C61000F3D52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenioAPIResponse.swift; sourceTree = "<group>"; };
 		4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+GenioAPI.swift"; sourceTree = "<group>"; };
+		425CDBA81FB65418000FF976 /* Item+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+Parser.swift"; sourceTree = "<group>"; };
+		425CDBAA1FB6542D000FF976 /* GenioAPIResponse+Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GenioAPIResponse+Parser.swift"; sourceTree = "<group>"; };
 		42DAACA31FB3DE360025E130 /* GenioAPIResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GenioAPIResponse.json; sourceTree = "<group>"; };
 		42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InterfaceAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAACC01FB3F1840025E130 /* GenoiAPIResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenoiAPIResponseTests.swift; sourceTree = "<group>"; };
@@ -91,7 +95,9 @@
 				4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */,
 				4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */,
 				4237D7101FB62C61000F3D52 /* Item.swift */,
+				425CDBA81FB65418000FF976 /* Item+Parser.swift */,
 				4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */,
+				425CDBAA1FB6542D000FF976 /* GenioAPIResponse+Parser.swift */,
 				42102DB31F9D059F00E68B38 /* Info.plist */,
 			);
 			path = ExternalInterfaces;
@@ -229,9 +235,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				4237D7131FB62CAD000F3D52 /* GenioAPIResponse.swift in Sources */,
+				425CDBA91FB65418000FF976 /* Item+Parser.swift in Sources */,
 				4237D7111FB62C61000F3D52 /* Item.swift in Sources */,
 				4237D70F1FB62BC3000F3D52 /* URLSession+Item.swift in Sources */,
 				4237D7161FB6318C000F3D52 /* URL+GenioAPI.swift in Sources */,
+				425CDBAB1FB6542D000FF976 /* GenioAPIResponse+Parser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
