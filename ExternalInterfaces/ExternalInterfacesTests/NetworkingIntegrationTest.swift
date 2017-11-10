@@ -10,14 +10,15 @@ import XCTest
 @testable import ExternalInterfaces
 
 class NetworkingIntegrationTest: XCTestCase {
-    var expectation = XCTestExpectation()
+    let taskExpectation = XCTestExpectation()
     let waiter = XCTWaiter()
+    var task : URLSessionTask?
     func testThatAPIReturnsItems() {
-        waiter.wait(for: [expectation], timeout: 10)
-        let task = URLSession.shared.itemsTask(with: URL.GenioSampleData) { (items) in
+        task = URLSession.shared.itemsTask(with: URL.GenioSampleData) { (items) in
             if items.isEmpty { XCTFail("Items from API should not be empty") }
-            self.expectation.fulfill()
+            self.taskExpectation.fulfill()
         }
-        task.resume()
+        task?.resume()
+        wait(for: [taskExpectation], timeout: 10)
     }
 }
