@@ -28,7 +28,6 @@ extension Item {
             let text = JSON[Keys.text] as? String else {
                 return nil
         }
-        
         self.type = type
         self.name = JSON[Keys.name] as? String
         self.text = text
