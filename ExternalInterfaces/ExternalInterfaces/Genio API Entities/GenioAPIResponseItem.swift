@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Item {
+struct GenioAPIResponseItem {
     let type: String
     let text: String
     let imageURL: String?

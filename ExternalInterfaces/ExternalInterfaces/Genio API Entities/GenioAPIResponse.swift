@@ -9,6 +9,6 @@
 import Foundation
 
 struct GenioAPIResponse {
-    let items: [Item]
+    let items: [GenioAPIResponseItem]
 }
 

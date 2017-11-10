@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension Item {
+extension GenioAPIResponseItem {
     private struct Keys {
         static let type = "type"
         static let name = "name"

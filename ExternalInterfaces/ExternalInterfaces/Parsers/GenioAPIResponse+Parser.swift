@@ -17,8 +17,8 @@ extension GenioAPIResponse {
         guard let response = JSON[Keys.items] as? [[String: Any]] else {
             return nil
         }
-        self.items = response.flatMap({ (json) -> Item? in
-            return Item(JSON: json as AnyObject)
+        self.items = response.flatMap({ (json) -> GenioAPIResponseItem? in
+            return GenioAPIResponseItem(JSON: json as AnyObject)
         })
     }
 }
