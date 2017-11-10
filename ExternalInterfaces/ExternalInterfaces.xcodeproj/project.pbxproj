@@ -96,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */,
+				425CDBAF1FB655F1000FF976 /* Data+URL.swift */,
 				425CDBAE1FB65540000FF976 /* Genio API Entities */,
 				425CDBAD1FB654DA000FF976 /* Parsers */,
 				425CDBAC1FB654AD000FF976 /* Network */,
@@ -137,7 +138,6 @@
 		425CDBAE1FB65540000FF976 /* Genio API Entities */ = {
 			isa = PBXGroup;
 			children = (
-				425CDBAF1FB655F1000FF976 /* Data+URL.swift */,
 				4237D7101FB62C61000F3D52 /* GenioAPIResponseItem.swift */,
 				4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */,
 			);
