@@ -22,7 +22,7 @@ private extension JSONSerialization {
     }
 }
 
-class GenoiAPIResponseTests: XCTestCase {
+class GenioAPIResponseTests: XCTestCase {
     
     func testAPIResponseInitialization() {
         let jsonFileName = "GenioAPIResponse"
