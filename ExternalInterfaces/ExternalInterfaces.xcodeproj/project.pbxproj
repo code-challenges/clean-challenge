@@ -8,10 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		42102DB91F9D059F00E68B38 /* ExternalInterfaces.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42102DAF1F9D059F00E68B38 /* ExternalInterfaces.framework */; };
-		42102DBE1F9D059F00E68B38 /* ExternalInterfacesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102DBD1F9D059F00E68B38 /* ExternalInterfacesTests.swift */; };
+		42102DBE1F9D059F00E68B38 /* NetworkingIntegrationTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102DBD1F9D059F00E68B38 /* NetworkingIntegrationTest.swift */; };
 		42102DC01F9D059F00E68B38 /* ExternalInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4237D70F1FB62BC3000F3D52 /* URLSession+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */; };
+		4237D7111FB62C61000F3D52 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7101FB62C61000F3D52 /* Item.swift */; };
+		4237D7131FB62CAD000F3D52 /* GenioAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */; };
+		4237D7161FB6318C000F3D52 /* URL+GenioAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */; };
 		42DAACA41FB3DE360025E130 /* GenioAPIResponse.json in Resources */ = {isa = PBXBuildFile; fileRef = 42DAACA31FB3DE360025E130 /* GenioAPIResponse.json */; };
-		42DAACB61FB3E7C00025E130 /* Interfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACB51FB3E7C00025E130 /* Interfaces.swift */; };
 		42DAACBE1FB3E9100025E130 /* InterfaceAdapters.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */; };
 		42DAACC11FB3F1840025E130 /* GenoiAPIResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACC01FB3F1840025E130 /* GenoiAPIResponseTests.swift */; };
 /* End PBXBuildFile section */
@@ -31,10 +34,13 @@
 		42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExternalInterfaces.h; sourceTree = "<group>"; };
 		42102DB31F9D059F00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		42102DB81F9D059F00E68B38 /* ExternalInterfacesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExternalInterfacesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		42102DBD1F9D059F00E68B38 /* ExternalInterfacesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExternalInterfacesTests.swift; sourceTree = "<group>"; };
+		42102DBD1F9D059F00E68B38 /* NetworkingIntegrationTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingIntegrationTest.swift; sourceTree = "<group>"; };
 		42102DBF1F9D059F00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Item.swift"; sourceTree = "<group>"; };
+		4237D7101FB62C61000F3D52 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenioAPIResponse.swift; sourceTree = "<group>"; };
+		4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+GenioAPI.swift"; sourceTree = "<group>"; };
 		42DAACA31FB3DE360025E130 /* GenioAPIResponse.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = GenioAPIResponse.json; sourceTree = "<group>"; };
-		42DAACB51FB3E7C00025E130 /* Interfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interfaces.swift; sourceTree = "<group>"; };
 		42DAACBF1FB3E9100025E130 /* InterfaceAdapters.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = InterfaceAdapters.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		42DAACC01FB3F1840025E130 /* GenoiAPIResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenoiAPIResponseTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -82,7 +88,10 @@
 			isa = PBXGroup;
 			children = (
 				42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */,
-				42DAACB51FB3E7C00025E130 /* Interfaces.swift */,
+				4237D7151FB6318C000F3D52 /* URL+GenioAPI.swift */,
+				4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */,
+				4237D7101FB62C61000F3D52 /* Item.swift */,
+				4237D7121FB62CAD000F3D52 /* GenioAPIResponse.swift */,
 				42102DB31F9D059F00E68B38 /* Info.plist */,
 			);
 			path = ExternalInterfaces;
@@ -91,7 +100,7 @@
 		42102DBC1F9D059F00E68B38 /* ExternalInterfacesTests */ = {
 			isa = PBXGroup;
 			children = (
-				42102DBD1F9D059F00E68B38 /* ExternalInterfacesTests.swift */,
+				42102DBD1F9D059F00E68B38 /* NetworkingIntegrationTest.swift */,
 				42DAACC01FB3F1840025E130 /* GenoiAPIResponseTests.swift */,
 				42DAACA31FB3DE360025E130 /* GenioAPIResponse.json */,
 				42102DBF1F9D059F00E68B38 /* Info.plist */,
@@ -219,7 +228,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DAACB61FB3E7C00025E130 /* Interfaces.swift in Sources */,
+				4237D7131FB62CAD000F3D52 /* GenioAPIResponse.swift in Sources */,
+				4237D7111FB62C61000F3D52 /* Item.swift in Sources */,
+				4237D70F1FB62BC3000F3D52 /* URLSession+Item.swift in Sources */,
+				4237D7161FB6318C000F3D52 /* URL+GenioAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,7 +240,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				42DAACC11FB3F1840025E130 /* GenoiAPIResponseTests.swift in Sources */,
-				42102DBE1F9D059F00E68B38 /* ExternalInterfacesTests.swift in Sources */,
+				42102DBE1F9D059F00E68B38 /* NetworkingIntegrationTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

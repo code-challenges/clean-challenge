@@ -1,8 +1,8 @@
 //
-//  File.swift
+//  Parsing.swift
 //  ExternalInterfaces
 //
-//  Created by Julio Cesar Guzman Villanueva on 11/8/17.
+//  Created by Julio Cesar Guzman Villanueva on 11/10/17.
 //  Copyright © 2017 Julio Cesar Guzman Villanueva. All rights reserved.
 //
 
@@ -25,8 +25,8 @@ extension Item {
     
     init?(JSON: AnyObject) {
         guard let type = JSON[Keys.type] as? String,
-              let text = JSON[Keys.text] as? String else {
-            return nil
+            let text = JSON[Keys.text] as? String else {
+                return nil
         }
         
         self.type = type
@@ -36,22 +36,4 @@ extension Item {
     }
 }
 
-struct GenioAPIResponse {
-    let items: [Item]
-}
-
-extension GenioAPIResponse {
-    private struct Keys {
-        static let items = "array"
-    }
-    
-    init?(JSON: AnyObject) {
-        guard let response = JSON[Keys.items] as? [[String: Any]] else {
-                return nil
-        }
-        self.items = response.flatMap({ (json) -> Item? in
-            return Item(JSON: json as AnyObject)
-        })
-    }
-}
 
