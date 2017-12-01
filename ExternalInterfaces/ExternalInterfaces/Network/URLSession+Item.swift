@@ -8,8 +8,8 @@
 
 import Foundation
 
-extension URLSession {
-    func itemsTask(with url: URL, completion: @escaping ([LiverpoolAPIResponseItem]) -> ()) -> URLSessionDataTask {
+public extension URLSession {
+    public func itemsTask(with url: URL, completion: @escaping ([LiverpoolAPIResponseItem]) -> ()) -> URLSessionDataTask {
         let task = dataTask(with: url) { (data, response, error) in
             guard let data = data,
                   let json = try? JSONSerialization.jsonObject(with: data, options: []),

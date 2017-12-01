@@ -8,10 +8,10 @@
 
 import Foundation
 
-struct LiverpoolAPIResponseItem {
-    let displayName: String
-    let salePrice: String
-    let imageURL: String
+public struct LiverpoolAPIResponseItem {
+    public let displayName: String
+    public let salePrice: String
+    public let imageURL: String
 }
 
 

@@ -8,6 +8,8 @@
 
 import Foundation
 
-extension URL {
-    static let LiverpoolSearch = URL(string: "https://www.liverpool.com.mx/tienda?s=xbox&d3106047a194921c01969dfdec083925=json")!
+public extension URL {
+    static func liverpoolSearch(with string: String) -> URL {
+        return URL(string: "https://www.liverpool.com.mx/tienda?s=\(string)&d3106047a194921c01969dfdec083925=json")!
+    }
 }
