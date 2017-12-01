@@ -9,11 +9,11 @@
 import Foundation
 
 extension URLSession {
-    func itemsTask(with url: URL, completion: @escaping ([GenioAPIResponseItem]) -> ()) -> URLSessionDataTask {
+    func itemsTask(with url: URL, completion: @escaping ([LiverpoolAPIResponseItem]) -> ()) -> URLSessionDataTask {
         let task = dataTask(with: url) { (data, response, error) in
             guard let data = data,
                   let json = try? JSONSerialization.jsonObject(with: data, options: []),
-                  let response = GenioAPIResponse(JSON: json as AnyObject) else {
+                  let response = LiverpoolAPIReponse(JSON: json as AnyObject) else {
                     completion([])
                     return
             }

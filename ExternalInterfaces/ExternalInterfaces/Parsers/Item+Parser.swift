@@ -8,22 +8,18 @@
 
 import Foundation
 
-extension GenioAPIResponseItem {
+extension LiverpoolAPIResponseItem {
     private struct Keys {
-        static let type = "type"
-        static let name = "name"
-        static let text = "text"
-        static let imageURL = "image"
+        static let attributes = "attributes"
+        static let displayName = "product.displayName"
     }
     
     init?(JSON: AnyObject) {
-        guard let type = JSON[Keys.type] as? String,
-            let text = JSON[Keys.text] as? String else {
+        guard let attributes = JSON[Keys.attributes] as? [String: Any],
+              let displayNames = attributes[Keys.displayName] as? [String],
+              let displayName = displayNames.first else {
                 return nil
         }
-        self.type = type
-        self.name = JSON[Keys.name] as? String
-        self.text = text
-        self.imageURL = JSON[Keys.imageURL] as? String
+        self.displayName = displayName
     }
 }

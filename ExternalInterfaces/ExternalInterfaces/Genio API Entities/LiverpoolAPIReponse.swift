@@ -1,5 +1,5 @@
 //
-//  Parsing.swift
+//  GenioAPIResponse.swift
 //  ExternalInterfaces
 //
 //  Created by Julio Cesar Guzman Villanueva on 11/10/17.
@@ -8,13 +8,7 @@
 
 import Foundation
 
-struct GenioAPIResponseItem {
-    let type: String
-    let text: String
-    let imageURL: String?
-    let name: String?
+struct LiverpoolAPIReponse {
+    let items: [LiverpoolAPIResponseItem]
 }
-
-
-
 
