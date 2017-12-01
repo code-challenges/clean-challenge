@@ -10,6 +10,8 @@ import Foundation
 
 struct LiverpoolAPIResponseItem {
     let displayName: String
+    let salePrice: String
+    let imageURL: String
 }
 
 
