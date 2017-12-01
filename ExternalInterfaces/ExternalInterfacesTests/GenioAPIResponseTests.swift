@@ -25,7 +25,7 @@ private extension JSONSerialization {
 class GenioAPIResponseTests: XCTestCase {
     
     func testAPIResponseInitialization() {
-        let jsonFileName = "GenioAPIResponse"
+        let jsonFileName = "LiverpoolSearch"
         let bundle = Bundle(for: type(of: self))
         let jsonDictionary = JSONSerialization.makeJSONDictionary(from: bundle, with: jsonFileName)
         let parsedObject = jsonDictionary as AnyObject

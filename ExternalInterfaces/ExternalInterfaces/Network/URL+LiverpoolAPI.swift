@@ -9,5 +9,5 @@
 import Foundation
 
 extension URL {
-    static let GenioSampleData = URL(string: "https://api.hellogenio.com/common/global/test/android/sample/data")!
+    static let LiverpoolSearch = URL(string: "https://www.liverpool.com.mx/tienda?s=xbox&d3106047a194921c01969dfdec083925=json")!
 }

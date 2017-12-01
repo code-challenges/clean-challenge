@@ -14,7 +14,7 @@ class NetworkingIntegrationTest: XCTestCase {
     let waiter = XCTWaiter()
     var task : URLSessionTask?
     func testThatAPIReturnsItems() {
-        task = URLSession.shared.itemsTask(with: URL.GenioSampleData) { (items) in
+        task = URLSession.shared.itemsTask(with: URL.LiverpoolSearch) { (items) in
             if items.isEmpty { XCTFail("Items from API should not be empty") }
             self.taskExpectation.fulfill()
         }
