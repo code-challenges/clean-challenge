@@ -37,6 +37,8 @@ class GenioAPIResponseTests: XCTestCase {
             XCTFail()
             return
         }
-        //Add tests here
+        XCTAssertTrue("Consola Xbox One X 1 TB" == firstElement.displayName)
+        XCTAssertTrue("12299.0" == firstElement.salePrice)
+        XCTAssertTrue("https://ss423.liverpool.com.mx/sm/1063763108.jpg" == firstElement.imageURL)
     }
 }
