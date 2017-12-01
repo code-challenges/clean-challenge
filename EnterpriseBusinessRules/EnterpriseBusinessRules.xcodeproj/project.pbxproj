@@ -10,14 +10,9 @@
 		42102D4D1F9D052C00E68B38 /* EnterpriseBusinessRules.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42102D431F9D052C00E68B38 /* EnterpriseBusinessRules.framework */; };
 		42102D521F9D052C00E68B38 /* EnterpriseBusinessRulesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102D511F9D052C00E68B38 /* EnterpriseBusinessRulesTests.swift */; };
 		42102D541F9D052C00E68B38 /* EnterpriseBusinessRules.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102D461F9D052C00E68B38 /* EnterpriseBusinessRules.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		42DAACA61FB3E0050025E130 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACA51FB3E0050025E130 /* Message.swift */; };
 		42DAACA81FB3E6C80025E130 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACA71FB3E6C80025E130 /* Location.swift */; };
 		42DAACAA1FB3E6D90025E130 /* Address.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACA91FB3E6D90025E130 /* Address.swift */; };
 		42DAACAC1FB3E6E60025E130 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACAB1FB3E6E60025E130 /* User.swift */; };
-		42DAACAE1FB3E6F60025E130 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACAD1FB3E6F60025E130 /* Header.swift */; };
-		42DAACB01FB3E71A0025E130 /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACAF1FB3E71A0025E130 /* Footer.swift */; };
-		42DAACB21FB3E7340025E130 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACB11FB3E7340025E130 /* Chat.swift */; };
-		42DAACB41FB3E7430025E130 /* MessageState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DAACB31FB3E7430025E130 /* MessageState.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,14 +32,9 @@
 		42102D4C1F9D052C00E68B38 /* EnterpriseBusinessRulesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EnterpriseBusinessRulesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		42102D511F9D052C00E68B38 /* EnterpriseBusinessRulesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterpriseBusinessRulesTests.swift; sourceTree = "<group>"; };
 		42102D531F9D052C00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		42DAACA51FB3E0050025E130 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		42DAACA71FB3E6C80025E130 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		42DAACA91FB3E6D90025E130 /* Address.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Address.swift; sourceTree = "<group>"; };
 		42DAACAB1FB3E6E60025E130 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
-		42DAACAD1FB3E6F60025E130 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
-		42DAACAF1FB3E71A0025E130 /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
-		42DAACB11FB3E7340025E130 /* Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chat.swift; sourceTree = "<group>"; };
-		42DAACB31FB3E7430025E130 /* MessageState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageState.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,12 +80,7 @@
 				42102D461F9D052C00E68B38 /* EnterpriseBusinessRules.h */,
 				42102D471F9D052C00E68B38 /* Info.plist */,
 				42DAACA91FB3E6D90025E130 /* Address.swift */,
-				42DAACB11FB3E7340025E130 /* Chat.swift */,
-				42DAACAF1FB3E71A0025E130 /* Footer.swift */,
-				42DAACAD1FB3E6F60025E130 /* Header.swift */,
 				42DAACA71FB3E6C80025E130 /* Location.swift */,
-				42DAACA51FB3E0050025E130 /* Message.swift */,
-				42DAACB31FB3E7430025E130 /* MessageState.swift */,
 				42DAACAB1FB3E6E60025E130 /* User.swift */,
 			);
 			path = EnterpriseBusinessRules;
@@ -221,14 +206,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				42DAACB01FB3E71A0025E130 /* Footer.swift in Sources */,
-				42DAACAE1FB3E6F60025E130 /* Header.swift in Sources */,
-				42DAACB21FB3E7340025E130 /* Chat.swift in Sources */,
-				42DAACB41FB3E7430025E130 /* MessageState.swift in Sources */,
 				42DAACAC1FB3E6E60025E130 /* User.swift in Sources */,
 				42DAACAA1FB3E6D90025E130 /* Address.swift in Sources */,
 				42DAACA81FB3E6C80025E130 /* Location.swift in Sources */,
-				42DAACA61FB3E0050025E130 /* Message.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
