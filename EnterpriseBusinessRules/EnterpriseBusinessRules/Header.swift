@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Header {
+public struct Header {
     let name: String
     let text: String
     let image: Data

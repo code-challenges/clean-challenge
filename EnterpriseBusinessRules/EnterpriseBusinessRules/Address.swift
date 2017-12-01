@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Address {
+public struct Address {
     let name: String
     let location: Location
 }

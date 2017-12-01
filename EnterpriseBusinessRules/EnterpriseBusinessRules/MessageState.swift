@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum MessageState {
+public enum MessageState {
     case sent(Message)
     case received(Message)
 }

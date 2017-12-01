@@ -8,11 +8,11 @@
 
 import Foundation
 
-struct Message {
-    let text: String
-    let image: Data
-    let sender: User
-    let receiver: User
+public struct Message {
+    public let text: String
+    public let image: Data
+    public let sender: User
+    public let receiver: User
 }
 
 

@@ -8,9 +8,6 @@
 
 import Foundation
 
-//URL -> Data => GenioAPIResponseItem -> Message or Footer or Header
-//Data -> UIImage => Message or Footer or Header -> Views
-
 extension Data {
     static func make(with url: URL, completion: @escaping (Data?) -> Void) {
         let task = URLSession.shared.dataTask(with: url) { (data, _, _) in
