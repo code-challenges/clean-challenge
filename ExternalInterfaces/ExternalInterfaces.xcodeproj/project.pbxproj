@@ -11,6 +11,7 @@
 		42102DBE1F9D059F00E68B38 /* NetworkingIntegrationTest - DELETE ME.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42102DBD1F9D059F00E68B38 /* NetworkingIntegrationTest - DELETE ME.swift */; };
 		42102DC01F9D059F00E68B38 /* ExternalInterfaces.h in Headers */ = {isa = PBXBuildFile; fileRef = 42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		421DEFF01FD201A700508622 /* LiverpoolSearch.json in Resources */ = {isa = PBXBuildFile; fileRef = 421DEFEF1FD201A700508622 /* LiverpoolSearch.json */; };
+		421DEFF31FD2146A00508622 /* SwiftyUserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 421DEFF21FD2146A00508622 /* SwiftyUserDefaults.swift */; };
 		4237D70F1FB62BC3000F3D52 /* URLSession+Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */; };
 		4237D7111FB62C61000F3D52 /* LiverpoolAPIResponseItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7101FB62C61000F3D52 /* LiverpoolAPIResponseItem.swift */; };
 		4237D7131FB62CAD000F3D52 /* LiverpoolAPIReponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4237D7121FB62CAD000F3D52 /* LiverpoolAPIReponse.swift */; };
@@ -41,6 +42,7 @@
 		42102DBD1F9D059F00E68B38 /* NetworkingIntegrationTest - DELETE ME.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NetworkingIntegrationTest - DELETE ME.swift"; sourceTree = "<group>"; };
 		42102DBF1F9D059F00E68B38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		421DEFEF1FD201A700508622 /* LiverpoolSearch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = LiverpoolSearch.json; sourceTree = "<group>"; };
+		421DEFF21FD2146A00508622 /* SwiftyUserDefaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyUserDefaults.swift; sourceTree = "<group>"; };
 		4237D70E1FB62BC3000F3D52 /* URLSession+Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLSession+Item.swift"; sourceTree = "<group>"; };
 		4237D7101FB62C61000F3D52 /* LiverpoolAPIResponseItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolAPIResponseItem.swift; sourceTree = "<group>"; };
 		4237D7121FB62CAD000F3D52 /* LiverpoolAPIReponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiverpoolAPIReponse.swift; sourceTree = "<group>"; };
@@ -96,7 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				42102DB21F9D059F00E68B38 /* ExternalInterfaces.h */,
-				425CDBAF1FB655F1000FF976 /* Data+URL.swift */,
+				421DEFF11FD2141700508622 /* Extensions */,
 				425CDBAE1FB65540000FF976 /* Genio API Entities */,
 				425CDBAD1FB654DA000FF976 /* Parsers */,
 				425CDBAC1FB654AD000FF976 /* Network */,
@@ -115,6 +117,15 @@
 				42102DBF1F9D059F00E68B38 /* Info.plist */,
 			);
 			path = ExternalInterfacesTests;
+			sourceTree = "<group>";
+		};
+		421DEFF11FD2141700508622 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				425CDBAF1FB655F1000FF976 /* Data+URL.swift */,
+				421DEFF21FD2146A00508622 /* SwiftyUserDefaults.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		425CDBAC1FB654AD000FF976 /* Network */ = {
@@ -267,6 +278,7 @@
 				4237D7131FB62CAD000F3D52 /* LiverpoolAPIReponse.swift in Sources */,
 				425CDBB01FB655F1000FF976 /* Data+URL.swift in Sources */,
 				425CDBA91FB65418000FF976 /* Item+Parser.swift in Sources */,
+				421DEFF31FD2146A00508622 /* SwiftyUserDefaults.swift in Sources */,
 				4237D7111FB62C61000F3D52 /* LiverpoolAPIResponseItem.swift in Sources */,
 				4237D70F1FB62BC3000F3D52 /* URLSession+Item.swift in Sources */,
 				4237D7161FB6318C000F3D52 /* URL+LiverpoolAPI.swift in Sources */,
