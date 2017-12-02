@@ -47,18 +47,21 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
             Defaults[.searchedStrings] = searchHistory
             dataSource = SimplePrefixQueryDataSource(Defaults[.searchedStrings])
             resetRamReel(with: dataSource)
-            let view = UIViewController()
-            view.view.frame = self.view.bounds
-            view.title = "Buscaste: \(text)"
-            view.view.backgroundColor = .white
+            let resultsView = UIViewController()
+            resultsView.view.frame = self.view.bounds
+            resultsView.title = "Buscaste: \(text)"
+            resultsView.view.backgroundColor = .white
+            let textView = UITextView()
+            resultsView.view.addSubview(textView)
+            textView.layoutAttachAll()
             fetchViewModels(with: text, completion: { (viewModels) in
-                let viewModel = viewModels.first!
+                var textResult = ""
+                viewModels.forEach({ (viewModel) in
+                    textResult = textResult += viewModel.top + "\n"
+                })
                 DispatchQueue.main.async {
-                    let itemview = ItemView().fromNib() ?? ItemView()
-                    itemview.fill(with: viewModel)
-                    view.view.addSubview(itemview)
-                    itemview.layoutAttachAll()
-                    self.navigationController?.pushViewController(view, animated: true)
+                    textView.text = textResult
+                    self.navigationController?.pushViewController(resultsView, animated: true)
                 }
             })
           
