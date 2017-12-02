@@ -1,0 +1,18 @@
+{
+  "iOS" : [
+    {
+      "hash" : "d46ac7fe3dbe1237bc8d4b237e463239b8452a6e8a69593ba786d15c8afbf963",
+      "name" : "RAMReel"
+    }
+  ],
+  "commitish" : "3.0.0",
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "Mac" : [
+
+  ]
+}

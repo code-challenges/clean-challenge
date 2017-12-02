@@ -1,0 +1,4 @@
+framework module RAMReel {
+    header "RAMReel-Swift.h"
+    requires objc
+}
