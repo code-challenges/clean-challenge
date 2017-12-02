@@ -72,7 +72,6 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
     }
     
     private func fetchViewModels(with string: String, completion: @escaping ([ItemViewModel]) -> Void) {
-        //Patch: for space purging.
         let task = URLSession.shared.itemsTask(with: URL.liverpoolSearch(with: string)) { (items) in
             let viewModels = items.map({ (item) -> ItemViewModel in
                 return ItemViewModel(top: item.displayName, middle: item.salePrice, bottom: item.imageURL, data: Data())
