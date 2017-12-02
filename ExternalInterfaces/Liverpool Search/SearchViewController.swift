@@ -53,11 +53,14 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
             resultsView.view.backgroundColor = .white
             let textView = UITextView()
             resultsView.view.addSubview(textView)
-            textView.layoutAttachAll()
+            textView.frame = self.view.bounds
             fetchViewModels(with: text, completion: { (viewModels) in
                 var textResult = ""
                 viewModels.forEach({ (viewModel) in
-                    textResult = textResult += viewModel.top + "\n"
+                    textResult = textResult +
+                        viewModel.top + "\n" +
+                        viewModel.middle + "\n" +
+                        viewModel.bottom + "\n\n"
                 })
                 DispatchQueue.main.async {
                     textView.text = textResult
