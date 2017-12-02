@@ -17,27 +17,27 @@ fileprivate extension DefaultsKeys {
 class SearchViewController: UIViewController, UITextFieldDelegate {
 
     private var dataSource: SimplePrefixQueryDataSource!
-    private var ramReel: RAMReel<RAMCell, UITextField, SimplePrefixQueryDataSource>?
+    private var searchView: RAMReel<RAMCell, UITextField, SimplePrefixQueryDataSource>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         dataSource = SimplePrefixQueryDataSource(Defaults[.searchedStrings])
-        resetRamReel(with: dataSource)
+        resetSearchView(with: dataSource)
     }
     
-    private func resetRamReel(with dataSource: SimplePrefixQueryDataSource) {
-        self.ramReel?.view.removeFromSuperview()
-        self.ramReel = nil
+    private func resetSearchView(with dataSource: SimplePrefixQueryDataSource) {
+        self.searchView?.view.removeFromSuperview()
+        self.searchView = nil
         let frame = view.frame
-        let ramReel = RAMReel<RAMCell, UITextField, SimplePrefixQueryDataSource>(frame: frame,
+        let searchView = RAMReel<RAMCell, UITextField, SimplePrefixQueryDataSource>(frame: frame,
                                                                    dataSource: dataSource,
                                                                    placeholder: "Busqueda",
                                                                    attemptToDodgeKeyboard: true,
                                                                    hook: nil)
-        ramReel.textFieldDelegate = self
-        ramReel.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
-        view.addSubview(ramReel.view)
-        self.ramReel = ramReel
+        searchView.textFieldDelegate = self
+        searchView.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.addSubview(searchView.view)
+        self.searchView = searchView
     }
     
     public func textFieldDidEndEditing(_ textField: UITextField, reason: UITextFieldDidEndEditingReason) {
@@ -46,7 +46,7 @@ class SearchViewController: UIViewController, UITextFieldDelegate {
             searchHistory.append(text)
             Defaults[.searchedStrings] = searchHistory
             dataSource = SimplePrefixQueryDataSource(Defaults[.searchedStrings])
-            resetRamReel(with: dataSource)
+            resetSearchView(with: dataSource)
             let resultsView = UIViewController()
             resultsView.view.frame = self.view.bounds
             resultsView.title = "Buscaste: \(text)"
